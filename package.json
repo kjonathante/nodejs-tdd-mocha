@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kjonathante/nodejs-boilerplate#readme",
   "dependencies": {
+    "bunyan": "^1.8.12",
     "dotenv": "^8.0.0"
   }
 }
