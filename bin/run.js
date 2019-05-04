@@ -1,3 +1,4 @@
 const config = require("../config");
+const log = config.log();
 
-console.log(config.googleId);
+log.info(config.googleId);
