@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/kjonathante/nodejs-boilerplate.git"
   },
+  "engine" : {
+    "node": "6.9.5"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
