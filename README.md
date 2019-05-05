@@ -19,3 +19,4 @@ snyk auth xxxxxxxxxxxxxxxxxxxx
 npm install
 npm test
 ```
+5. Setup Deploy
