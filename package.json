@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node bin/run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test snyk test && eslint bin"
   },
   "repository": {
     "type": "git",
