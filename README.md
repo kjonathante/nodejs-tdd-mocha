@@ -1,15 +1,29 @@
-# nodejs-boilerplate
+# Boilerplate for creating node.js based application. Minus the Test Infrastructure.
+[![Codeship Status for kjonathante/nodejs-boilerplate](https://app.codeship.com/projects/6b8ebff0-5104-0137-5a7e-3689c7fabad4/status?branch=master)](https://app.codeship.com/projects/340065)
+- Configuration Infrastructure (dotenv)
+- Debugging (vscode)
+- Linting (eslint)
+- Logging Infrastructure (bunyan)
+- Security Audits (snyk)
+- CI/CD (Codeship)
 
-### eslint
+#### Reference:
+#### [Node.js: Extend and Maintain Applications by Daniel Khan ](https://www.lynda.com/Node-js-tutorials/Architecting-Enterprise-Scale-Node-js-Applications/569191-2.html?org=sfpl.org)
+
+### ESLint
 ```
 npm install -g --save-dev eslint
+# starts the configuration interface, select config in js
 eslint --init 
-# select config in js
-# .eslintrc.js
+# which will result into this file: .eslintrc.js
 ```
-
-### codeship
-1. Go to codeship & Sign in.
+### Snyk
+```
+npm install -g snyk
+snyk test
+```
+### Codeship
+1. Go to codeship.
 2. Create new project & connect it to a GitHub repo.
 3. Go to snyk's account settings to retrieve auth key.
 4. Add the following to the project settings / setup commands
@@ -17,6 +31,9 @@ eslint --init
 npm install -g eslint snyk
 snyk auth xxxxxxxxxxxxxxxxxxxx
 npm install
+```
+5. Add the following to the project settings / test commands
+```
 npm test
 ```
-5. Setup Deploy
+6. Setup Deploy (Heroku/Custom)
