@@ -1,4 +1,4 @@
-# Boilerplate for creating node.js based application. Minus the Test Infrastructure.
+# TDD using mocha, nyc and should
 [![Codeship Status for kjonathante/nodejs-boilerplate](https://app.codeship.com/projects/6b8ebff0-5104-0137-5a7e-3689c7fabad4/status?branch=master)](https://app.codeship.com/projects/340065)
 - Configuration Infrastructure (dotenv)
 - Debugging (vscode)
@@ -6,6 +6,11 @@
 - Logging Infrastructure (bunyan)
 - Security Audits (snyk)
 - CI/CD (Codeship)
+- TDD using mocha, nyc, should
+
+```
+npm i -D mocha nyc should
+```
 
 #### Reference:
 #### [Node.js: Extend and Maintain Applications by Daniel Khan ](https://www.lynda.com/Node-js-tutorials/Architecting-Enterprise-Scale-Node-js-Applications/569191-2.html?org=sfpl.org)
