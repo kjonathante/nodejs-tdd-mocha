@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node bin/run",
-    "test": "NODE_ENV=test snyk test && eslint bin"
+    "test": "NODE_ENV=test snyk test && eslint bin && nyc mocha --recursive test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kjonathante/nodejs-boilerplate.git"
   },
-  "engine" : {
+  "engine": {
     "node": "6.9.5"
   },
   "keywords": [],
@@ -24,5 +24,10 @@
   "dependencies": {
     "bunyan": "^1.8.12",
     "dotenv": "^8.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "should": "^13.2.3"
   }
 }
