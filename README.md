@@ -11,6 +11,17 @@
 ```
 npm i -D mocha nyc should
 ```
+append to .eslintrc.js
+```js
+module.exports = {
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "mocha": true // add this line
+    }
+}
+```
 
 #### Reference:
 #### [Node.js: Extend and Maintain Applications by Daniel Khan ](https://www.lynda.com/Node-js-tutorials/Architecting-Enterprise-Scale-Node-js-Applications/569191-2.html?org=sfpl.org)
