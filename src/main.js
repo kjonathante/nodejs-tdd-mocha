@@ -1,6 +1,19 @@
+/*
+    let input = {
+      id: "24770505034",
+      owner: "97248275@N03",
+      secret: "31a9986429",
+      server: "1577",
+      farm: 2,
+      title: "20160229090898",
+      ispublic: 1,
+      isfriend: 0,
+      isfamily: 0
+    };
+*/
 module.exports = {
   photoObjToURL(input) {
-    return "https://farm2.staticflickr.com/1577/24770505034_31a9986429_b.jpg";
+    return `https://farm${input.farm}.staticflickr.com/${input.server}/${input.id}_${input.secret}_b.jpg`;
   },
   // photoObjToURL2: function(input) {
   //   console.log(input);
