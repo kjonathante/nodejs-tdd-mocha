@@ -13,8 +13,16 @@
 */
 module.exports = {
   photoObjToURL(input) {
-    return `https://farm${input.farm}.staticflickr.com/${input.server}/${input.id}_${input.secret}_b.jpg`;
+    return `https://farm${input.farm}.staticflickr.com/${input.server}/${
+      input.id
+    }_${input.secret}_b.jpg`;
   },
+  transformPhotoObj: function(input) {
+    return {
+      title: input.title,
+      url: this.photoObjToURL(input)
+    };
+  }
   // photoObjToURL2: function(input) {
   //   console.log(input);
   // },
