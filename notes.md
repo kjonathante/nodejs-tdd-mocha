@@ -25,3 +25,19 @@ describe('FlickrFetcher', function() {
 BDD
 Written in the form: Describe "thing". It should "do something".
 "thing" can be a module, or a class, or a method, or a function.
+
+Ways to export your function
+```js
+module.exports = {
+  photoObjToURL(input) {
+    console.log(input);
+  },
+  photoObjToURL2: function (input) {
+    console.log(input);
+  },
+  photoObjToURL3: (input) => {
+    console.log(input);
+  }
+};
+```
+
